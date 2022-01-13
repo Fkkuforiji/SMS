@@ -18,11 +18,11 @@ public class Course {
     private String cInstructorName;
 
 
-
 @ManyToMany(mappedBy = "Courses")
 List<Student> Students = new ArrayList<>(); //how to join this with student many to many
 
     public List<Student> getStudents() {
+
         return Students;
     }
 

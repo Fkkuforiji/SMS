@@ -26,20 +26,18 @@ public class Student {
     List<Course> Courses = new ArrayList<>();
 
 
-    public Student(){
+    public Student() {
 
-    }
-    public List<Course> getCourses() {
-        return Courses;
     }
 
     //-- How to join two tables with nothing in common. -- ^^ is this correct? Learning Source: https://www.baeldung.com/jpa-many-to-many
 
-    public Student(String sEmail, String sName, String sPassword, List Courses) {
+
+    public Student(String sEmail, String sName, String sPassword, List<Course> courses) {
         this.sEmail = sEmail;
         this.sName = sName;
         this.sPassword = sPassword;
-        this.Courses = Courses;
+        Courses = courses;
     }
 
     public String getsEmail() {
